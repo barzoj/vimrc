@@ -24,3 +24,7 @@
 
      "numbers"
      set number
+
+     "get back normal backspace behaviour"
+     set backspace=indent,eol,start
+
