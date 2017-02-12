@@ -6,6 +6,8 @@
     Plugin 'gmarik/Vundle.vim'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'scrooloose/nerdtree'
+    "additional C++ highliting"
+    Plugin 'octol/vim-cpp-enhanced-highlight'
     Bundle 'https://github.com/freeo/vim-kalisi'
     Bundle 'jistr/vim-nerdtree-tabs'
     call vundle#end()
@@ -24,7 +26,7 @@
     "color scheme"
      colorscheme kalisi
 
-     "numbers"
+     "line numbers"
      set number
 
      "get back normal backspace behaviour"
@@ -36,3 +38,6 @@
      "mouse settings"
      set mouse=a
      set ttyfast
+
+     "make left/right cursor keys move to the previous/next line"
+     set whichwrap+=<,>,h,l,[,]
