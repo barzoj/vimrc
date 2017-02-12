@@ -5,7 +5,9 @@
     call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
     Plugin 'Valloric/YouCompleteMe'
+    Plugin 'scrooloose/nerdtree'
     Bundle 'https://github.com/freeo/vim-kalisi'
+    Bundle 'jistr/vim-nerdtree-tabs'
     call vundle#end()
     
     "youcompleteme settings"
@@ -28,3 +30,9 @@
      "get back normal backspace behaviour"
      set backspace=indent,eol,start
 
+     "nerdtree settings"
+     let g:nerdtree_tabs_open_on_console_startup=1
+
+     "mouse settings"
+     set mouse=a
+     set ttyfast
