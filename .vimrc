@@ -1,43 +1,49 @@
-    set nocompatible
-    filetype off
-    set rtp+=~/.vim/bundle/Vundle.vim
-    
-    call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'
-    Plugin 'Valloric/YouCompleteMe'
-    Plugin 'scrooloose/nerdtree'
-    "additional C++ highliting"
-    Plugin 'octol/vim-cpp-enhanced-highlight'
-    Bundle 'https://github.com/freeo/vim-kalisi'
-    Bundle 'jistr/vim-nerdtree-tabs'
-    call vundle#end()
-    
-    "youcompleteme settings"
-    filetype plugin indent on
-    let g:ycm_seed_identifiers_with_syntax=1
-    let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-    let g:ycm_confirm_extra_conf=0
-    let g:ycm_collect_identifiers_from_tag_files = 1
-    set completeopt=longest,menu
+set nocompatible
+filetype off "required for Vundle"
+set rtp+=~/.vim/bundle/Vundle.vim
 
-    "syntax"
-    syntax on
-    
-    "color scheme"
-     colorscheme kalisi
+call vundle#begin()
+	Plugin 'gmarik/Vundle.vim'
+	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'scrooloose/nerdtree'
+	"additional C++ highliting"
+	Plugin 'octol/vim-cpp-enhanced-highlight'
+	Bundle 'https://github.com/freeo/vim-kalisi'
+	Bundle 'jistr/vim-nerdtree-tabs'
+	call vundle#end()
 
-     "line numbers"
-     set number
+"youcompleteme settings"
+filetype plugin indent on
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
+let g:ycm_collect_identifiers_from_tag_files = 1
+set completeopt=longest,menu
 
-     "get back normal backspace behaviour"
-     set backspace=indent,eol,start
+"syntax and filetype autodetection"
+filetype plugin indent on " Filetype auto-detection
+syntax on
 
-     "nerdtree settings"
-     let g:nerdtree_tabs_open_on_console_startup=1
+"color scheme"
+colorscheme kalisi
+set background=dark
 
-     "mouse settings"
-     set mouse=a
-     set ttyfast
+"line numbers"
+set number
 
-     "make left/right cursor keys move to the previous/next line"
-     set whichwrap+=<,>,h,l,[,]
+"get back normal backspace behaviour"
+set backspace=indent,eol,start
+
+"nerdtree settings"
+let g:nerdtree_tabs_open_on_console_startup=1
+
+"mouse settings"
+set mouse=a
+set ttyfast
+
+"make left/right cursor keys move to the previous/next line"
+set whichwrap+=<,>,h,l,[,]
+
+"highlight extra whitespaces"
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
