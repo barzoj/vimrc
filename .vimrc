@@ -47,3 +47,6 @@ set whichwrap+=<,>,h,l,[,]
 "highlight extra whitespaces"
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+"enable spellcheck"
+set spell spelllang=en_us
