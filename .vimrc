@@ -6,7 +6,7 @@ call vundle#begin()
 	Plugin 'gmarik/Vundle.vim'
 	Plugin 'Valloric/YouCompleteMe'
 	Plugin 'scrooloose/nerdtree'
-	"additional C++ highliting"
+	"additional C++ highlighting"
 	Plugin 'octol/vim-cpp-enhanced-highlight'
 	Bundle 'https://github.com/freeo/vim-kalisi'
 	Bundle 'jistr/vim-nerdtree-tabs'
@@ -31,7 +31,7 @@ set background=dark
 "line numbers"
 set number
 
-"get back normal backspace behaviour"
+"get back normal backspace behavior"
 set backspace=indent,eol,start
 
 "nerdtree settings"
