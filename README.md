@@ -36,6 +36,7 @@ Launch vim and run `:PluginInstall`
 * Configure youcompleteme
 
 `$ cd ~/.vim/bundle/YouCompleteMe
+
 $ ./install.py --clang-completer`
 
 * start vim and enjoy!
