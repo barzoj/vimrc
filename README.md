@@ -14,21 +14,27 @@ This repository contains my vim configuration for C++ development.
 # installation
 
 * Clone the repository
+
 `$ git clone https://github.com/barzoj/vimrc.git ~/vimrc`
 
 * Make a softlink to ~/.vimrc
+
 `$ ln -sf ~/vimrc/.vimrc ~/.vimrc`
 
-* Setup vundle, for additional details see [https://github.com/VundleVim/Vundle.vim]
+* Setup vundle, for additional details see https://github.com/VundleVim/Vundle.vim
+
 `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 * Install plugins
+
 Launch vim and run `:PluginInstall`
 
 5. Exit vim
+
 `:q!`
 
 6. Configure youcompleteme
+
 `$ cd ~/.vim/bundle/YouCompleteMe
 $ ./install.py --clang-completer`
 
