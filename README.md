@@ -29,13 +29,13 @@ This repository contains my vim configuration for C++ development.
 
 Launch vim and run `:PluginInstall`
 
-5. Exit vim
+* Exit vim
 
 `:q!`
 
-6. Configure youcompleteme
+* Configure youcompleteme
 
 `$ cd ~/.vim/bundle/YouCompleteMe
 $ ./install.py --clang-completer`
 
-7. start vim and enjoy!
+* start vim and enjoy!
