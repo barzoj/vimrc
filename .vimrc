@@ -8,6 +8,8 @@ call vundle#begin()
 	Plugin 'scrooloose/nerdtree'
 	"additional C++ highlighting"
 	Plugin 'octol/vim-cpp-enhanced-highlight'
+	"ctags"
+	Plugin 'universal-ctags/ctags'
 	Bundle 'https://github.com/freeo/vim-kalisi'
 	Bundle 'jistr/vim-nerdtree-tabs'
 	call vundle#end()
@@ -46,7 +48,11 @@ set whichwrap+=<,>,h,l,[,]
 
 "highlight extra whitespaces"
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+autocmd! BufWinEnter  * match ExtraWhitespace /\s\+$/
 
 "enable spellcheck"
 set spell spelllang=en_us
+
+"show tabs"
+set listchars=trail:·,tab:»·
+set list
