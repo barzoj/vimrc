@@ -6,6 +6,7 @@ call vundle#begin()
 	Plugin 'gmarik/Vundle.vim'
 	Plugin 'Valloric/YouCompleteMe'
 	Plugin 'scrooloose/nerdtree'
+	Plugin 'tagbar'
 	"additional C++ highlighting"
 	Plugin 'octol/vim-cpp-enhanced-highlight'
 	"ctags"
@@ -56,3 +57,7 @@ set spell spelllang=en_us
 "show tabs"
 set listchars=trail:·,tab:»·
 set list
+set tabstop=4
+
+"Tagbar toggler"
+nmap <F8> :TagbarToggle<CR>
