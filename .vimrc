@@ -13,6 +13,10 @@ call vundle#begin()
 	Plugin 'universal-ctags/ctags'
 	Bundle 'https://github.com/freeo/vim-kalisi'
 	Bundle 'jistr/vim-nerdtree-tabs'
+	Plugin 'vim-airline/vim-airline'
+	Plugin 'vim-airline/vim-airline-themes'
+	Plugin 'bling/vim-bufferline'
+	Plugin 'vim-ctrlspace/vim-ctrlspace'
 	call vundle#end()
 
 "youcompleteme settings"
@@ -44,9 +48,6 @@ let g:nerdtree_tabs_open_on_console_startup=1
 set mouse=a
 set ttyfast
 
-"make left/right cursor keys move to the previous/next line"
-set whichwrap+=<,>,h,l,[,]
-
 "highlight extra whitespaces"
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd! BufWinEnter  * match ExtraWhitespace /\s\+$/
@@ -61,3 +62,15 @@ set tabstop=4
 
 "Tagbar toggler"
 nmap <F8> :TagbarToggle<CR>
+
+"improve default search"
+set ignorecase
+set smartcase
+set hlsearch
+
+"ctrlp settings"
+set nocompatible
+set hidden
+
+"make left/right cursor keys move to the previous/next line"
+set whichwrap+=<,>,h,l,[,]
